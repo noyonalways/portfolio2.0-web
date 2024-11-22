@@ -7,7 +7,7 @@ interface IProps {}
 const Designation = ({}: IProps) => {
   return (
     <TypeAnimation
-      className="block dark:text-white text-xl"
+      className="block dark:text-white text-lg md:text-xl"
       sequence={[
         "MERN Stack Developer",
         1000,

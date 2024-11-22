@@ -7,10 +7,10 @@ interface IProps {
 
 const MainLayout = ({ children }: IProps) => {
   return (
-    <div className="dark:bg-[url('/noise.webp')] bg-repeat bg-contain">
+    <main className="dark:bg-[url('/noise.webp')] bg-repeat bg-contain">
       <NavigationDock />
       {children}
-    </div>
+    </main>
   );
 };
 
