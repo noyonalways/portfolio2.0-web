@@ -38,7 +38,7 @@ const AboutSection = ({}: IProps) => {
             <div className="md:col-span-4 space-y-6">
               <div className="space-y-4">
                 <h1
-                  className={`font-bold text-4xl md:text-5xl ${khula.className}`}
+                  className={`font-bold text-4xl md:text-5xl pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text leading-none text-transparent dark:from-white dark:to-slate-900/10 ${khula.className}`}
                 >
                   About Me
                 </h1>

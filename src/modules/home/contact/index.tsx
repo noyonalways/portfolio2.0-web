@@ -61,10 +61,8 @@ const ContactSection = ({}: IProps) => {
             <p
               className={`leading-relaxed text-sm md:text-base ${poppins.className}`}
             >
-              © 2024 Noyon. All rights reserved. This website and its contents
-              are lovingly crafted to showcase creativity, expertise, and
-              passion for web development. Unauthorized use or duplication of
-              any material without permission is strictly prohibited.
+              © 2024 Noyon Rahman. Made with ❤️ to showcase creativity and
+              passion for web development.
             </p>
           </div>
         </InitialAnimation>

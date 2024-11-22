@@ -4,19 +4,12 @@ import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
 import Container from "@/components/ui/container";
 import ShinyButton from "@/components/ui/shiny-button";
 import envConfig from "@/config/env.config";
+import { IBlog } from "@/types";
 import { khula } from "@/utils/fonts";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
-
-interface IBlog {
-  _id: string;
-  title: string;
-  brief: string;
-  cover: string;
-  slug: string;
-}
 
 interface IBento {
   name: string;
@@ -49,7 +42,12 @@ export default async function BlogSection() {
       className: `col-span-3 ${pattern[index % pattern.length]}`,
       background: (
         <div className="absolute right-0 origin-top rounded-md border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105">
-          <Image width={800} height={500} src={blog?.cover} alt="" />
+          <Image
+            width={800}
+            height={500}
+            src={blog?.cover}
+            alt={blog?.slug + "cover-image"}
+          />
         </div>
       ),
     };
@@ -60,7 +58,9 @@ export default async function BlogSection() {
       <Container>
         <div className="space-y-6">
           <div>
-            <h1 className={`font-bold text-4xl md:text-5xl ${khula.className}`}>
+            <h1
+              className={`font-bold text-4xl md:text-5xl pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text leading-none text-transparent dark:from-white dark:to-slate-900/10 ${khula.className}`}
+            >
               Recent Blogs
             </h1>
           </div>

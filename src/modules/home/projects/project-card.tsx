@@ -1,7 +1,7 @@
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
+import { IProject } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
-import { IProject } from ".";
 
 interface IProps {
   project: IProject;
@@ -10,7 +10,7 @@ interface IProps {
 export function ProjectCard({ project }: IProps) {
   return (
     <CardContainer className="inter-var">
-      <CardBody className="bg-gray-50 relative dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] h-auto rounded-xl p-6 border w-auto ">
+      <CardBody className="bg-gray-50 relative dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black h-auto rounded-xl p-6 border border-zinc-100 dark:border-zinc-900 w-auto ">
         <CardItem
           translateZ="50"
           className="text-2xl font-bold text-neutral-600 dark:text-white"

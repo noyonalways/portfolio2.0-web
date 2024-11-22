@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  @apply scroll-smooth;
+}
 ::-webkit-scrollbar {
   @apply w-1 lg:w-[4px];
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { CalendarIcon, HomeIcon, MailIcon, Newspaper } from "lucide-react";
+import { CalendarIcon, FileTextIcon, HomeIcon, MailIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -65,7 +65,7 @@ const Icons = {
 const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blogs", icon: Newspaper, label: "Blog" },
+    { href: "/blogs", icon: FileTextIcon, label: "Blog" },
   ],
   contact: {
     social: {
@@ -84,7 +84,7 @@ const DATA = {
         url: "https://twitter.com/noyonalways",
         icon: Icons.x,
       },
-      email: {
+      Email: {
         name: "Send Email",
         url: "mailto:noyonrahman2003@gmail.com",
         icon: Icons.email,
@@ -95,7 +95,7 @@ const DATA = {
 
 export function NavigationDock() {
   return (
-    <div className="">
+    <>
       {/* <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
         Dock
       </span> */}
@@ -161,6 +161,6 @@ export function NavigationDock() {
           </DockIcon>
         </Dock>
       </TooltipProvider>
-    </div>
+    </>
   );
 }
