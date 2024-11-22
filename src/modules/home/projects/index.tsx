@@ -2,12 +2,12 @@ import Container from "@/components/ui/container";
 
 interface IProps {}
 
-const AboutSection = ({}: IProps) => {
+const ProjectsSection = ({}: IProps) => {
   return (
     <section className="h-screen">
-      <Container>About</Container>
+      <Container>Projects</Container>
     </section>
   );
 };
 
-export default AboutSection;
+export default ProjectsSection;
