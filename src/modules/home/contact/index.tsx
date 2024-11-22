@@ -1,7 +1,7 @@
 import Container from "@/components/ui/container";
 import { FlipWords } from "@/components/ui/flip-words";
 import ShinyButton from "@/components/ui/shiny-button";
-import { khula } from "@/utils/fonts";
+import { khula, poppins } from "@/utils/fonts";
 import { LucideLinkedin, Mail, Phone } from "lucide-react";
 import InitialAnimation from "./initial-animation";
 
@@ -20,7 +20,7 @@ const ContactSection = ({}: IProps) => {
         <InitialAnimation>
           <div className="text-center space-y-6">
             <h3
-              className={`text-xl md:text-3xl text-muted-foreground font-medium`}
+              className={`text-xl md:text-3xl text-muted-foreground font-medium ${poppins.className}`}
             >
               Want to collaborate?
             </h3>
@@ -58,7 +58,9 @@ const ContactSection = ({}: IProps) => {
           </div>
 
           <div className="text-center max-w-xl mx-auto text-muted-foreground">
-            <p className="leading-relaxed text-sm md:text-base">
+            <p
+              className={`leading-relaxed text-sm md:text-base ${poppins.className}`}
+            >
               © 2024 Noyon. All rights reserved. This website and its contents
               are lovingly crafted to showcase creativity, expertise, and
               passion for web development. Unauthorized use or duplication of
