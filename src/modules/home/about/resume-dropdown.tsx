@@ -23,8 +23,26 @@ const ResumeDropdown = ({}: IProps) => {
         </ShinyButton>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="start">
-        <DropdownMenuItem>View</DropdownMenuItem>
-        <DropdownMenuItem>Download</DropdownMenuItem>
+        <DropdownMenuItem>
+          <a
+            className="w-full block"
+            href={`https://drive.google.com/file/d/1S4oDpUJGjgftaStzTedI_H85tgGEtMMp/view?usp=sharing`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View
+          </a>
+        </DropdownMenuItem>
+        <DropdownMenuItem>
+          <a
+            className="w-full block"
+            href={`https://drive.usercontent.google.com/u/0/uc?id=1S4oDpUJGjgftaStzTedI_H85tgGEtMMp&export=download`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download
+          </a>
+        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );
