@@ -7,7 +7,7 @@ interface IProps {
 
 const MainLayout = ({ children }: IProps) => {
   return (
-    <div className="relative">
+    <div className="dark:bg-[url('/noise.webp')] bg-repeat bg-contain">
       <NavigationDock />
       {children}
     </div>

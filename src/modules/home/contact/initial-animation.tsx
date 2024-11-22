@@ -9,7 +9,6 @@ interface IProps {
 const InitialAnimation = ({ children }: IProps) => {
   return (
     <motion.div
-      className="dark:bg-[url('/noise.webp')] bg-repeat bg-contain w-full h-full flex items-center"
       initial={{ opacity: 0.0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{
