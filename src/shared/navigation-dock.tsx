@@ -101,6 +101,7 @@ export function NavigationDock() {
       </span> */}
       <TooltipProvider>
         <Dock
+          // distance={}
           direction="middle"
           className="rounded-full fixed bottom-6 left-1/2 -translate-x-[50%] z-[9999]"
         >

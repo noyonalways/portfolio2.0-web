@@ -3,14 +3,21 @@ import { FlipWords } from "@/components/ui/flip-words";
 import ShinyButton from "@/components/ui/shiny-button";
 import { khula } from "@/utils/fonts";
 import { LucideLinkedin, Mail, Phone } from "lucide-react";
+import InitialAnimation from "./initial-animation";
 
 interface IProps {}
 
 const ContactSection = ({}: IProps) => {
   return (
-    <section className="pb-28 pt-32 border-t">
+    <section className="relative overflow-hidden pb-28 pt-32 bg-[url('/gradient-light.png')] dark:md:bg-bottom bg-no-repeat">
+      <div className="absolute hidden lg:block h-16 w-[600px] rotate-[-40deg] rounded-3xl bg-sky-400 opacity-10 blur-2xl filter dark:hidden lg:bottom-24 lg:-left-28 lg:h-12 lg:w-[600px] lg:opacity-30 lg:blur-2xl xl:-left-40 xl:h-4 xl:w-[700px] xl:opacity-100"></div>
+      <div className="absolute hidden lg:block h-14 w-[600px] rotate-[-40deg] rounded-3xl bg-purple-400 opacity-30 blur-2xl filter dark:hidden lg:bottom-20 lg:-left-28 lg:h-10 lg:w-[600px] lg:opacity-20 lg:blur-xl xl:-left-40 xl:h-2 xl:w-[800px] xl:opacity-100"></div>
+
+      <div className="absolute hidden lg:block h-16 w-[600px] rotate-[40deg] rounded-3xl bg-sky-400 opacity-10 blur-2xl filter dark:hidden lg:bottom-24 lg:-right-28 lg:h-12 lg:w-[600px] lg:opacity-30 lg:blur-2xl xl:-right-40 xl:h-4 xl:w-[700px] xl:opacity-100"></div>
+      <div className="absolute hidden lg:block h-14 w-[600px] rotate-[40deg] rounded-3xl bg-purple-400 opacity-30 blur-2xl filter dark:hidden lg:bottom-20 lg:-right-28 lg:h-10 lg:w-[600px] lg:opacity-20 lg:blur-xl xl:-right-40 xl:h-2 xl:w-[800px] xl:opacity-100"></div>
+
       <Container>
-        <div>
+        <InitialAnimation>
           <div className="text-center space-y-6">
             <h3
               className={`text-xl md:text-3xl text-muted-foreground font-medium`}
@@ -58,7 +65,7 @@ const ContactSection = ({}: IProps) => {
               any material without permission is strictly prohibited.
             </p>
           </div>
-        </div>
+        </InitialAnimation>
       </Container>
     </section>
   );
