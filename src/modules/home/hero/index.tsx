@@ -13,7 +13,7 @@ const HeroSection = ({}: IProps) => {
   return (
     <section>
       <AuroraBackground
-        className={`dark:bg-[url('/bg-gradient.png')] bg-cover bg-center `}
+        className={`dark:bg-[url('/bg-web.png')] bg-cover bg-center`}
       >
         <InitialAnimation>
           <Container>
