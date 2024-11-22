@@ -24,7 +24,9 @@ export default async function TechStack() {
       </h1> */}
 
       <div className="mb-10">
-        <Cover className={`font-bold text-5xl ${khula.className} pt-2`}>
+        <Cover
+          className={`font-bold text-4xl md:text-5xl ${khula.className} pt-2`}
+        >
           Tech Stack
         </Cover>
       </div>
