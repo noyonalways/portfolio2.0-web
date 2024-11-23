@@ -9,9 +9,9 @@ import { khula, michroma, poppins } from "@/utils/fonts";
 import { ChevronRight, Github } from "lucide-react";
 
 interface IProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 const ProjectDetails = async ({ params }: IProps) => {
