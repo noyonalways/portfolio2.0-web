@@ -7,9 +7,7 @@ import { IProject } from "@/types";
 interface IProps {}
 
 const Projects = async ({}: IProps) => {
-  const res = await fetch(
-    `${envConfig.baseApi}/projects?fields=frontend,backend,title,brief,slug,cover,type` as string
-  );
+  const res = await fetch(`${envConfig.baseApi}/projects` as string);
   const { data } = await res.json();
   return (
     <section className="md:pt-10 pb-10">
