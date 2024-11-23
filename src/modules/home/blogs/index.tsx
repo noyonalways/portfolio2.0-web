@@ -23,7 +23,11 @@ interface IBento {
 }
 
 export default async function BlogSection() {
-  const res = await fetch(`${envConfig.baseApi}/blogs` as string);
+  const res = await fetch(`${envConfig.baseApi}/blogs` as string, {
+    next: {
+      revalidate: 120,
+    },
+  });
   const { data } = await res.json();
 
   const dynamicBlogs = data?.map((blog: IBlog, index: number) => {

@@ -8,7 +8,9 @@ import Link from "next/link";
 interface IProps {}
 
 const Blogs = async ({}: IProps) => {
-  const res = await fetch(`${envConfig.baseApi}/blogs?limit=15` as string);
+  const res = await fetch(`${envConfig.baseApi}/blogs?limit=15` as string, {
+    cache: "no-store",
+  });
   const { data } = await res.json();
 
   return (

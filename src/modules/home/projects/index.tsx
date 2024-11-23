@@ -10,7 +10,11 @@ import { ProjectCard } from "./project-card";
 interface IProps {}
 
 const ProjectSection = async ({}: IProps) => {
-  const res = await fetch(`${envConfig.baseApi}/projects?limit=4` as string);
+  const res = await fetch(`${envConfig.baseApi}/projects?limit=4` as string, {
+    next: {
+      revalidate: 120,
+    },
+  });
   const { data } = await res.json();
 
   return (
