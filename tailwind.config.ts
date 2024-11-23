@@ -144,6 +144,14 @@ const config = {
             transform: "translateY(calc(-100% - var(--gap)))",
           },
         },
+        "shiny-text": {
+          "0%, 90%, 100%": {
+            "background-position": "calc(-100% - var(--shiny-width)) 0",
+          },
+          "30%, 60%": {
+            "background-position": "calc(100% + var(--shiny-width)) 0",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -155,6 +163,7 @@ const config = {
         "spin-around": "spin-around calc(var(--speed) * 2) infinite linear",
         marquee: "marquee var(--duration) infinite linear",
         "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
+        "shiny-text": "shiny-text 8s infinite",
       },
     },
   },
@@ -165,6 +174,7 @@ const config = {
 export default config;
 
 // This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function addVariablesForColors({ addBase, theme }: any) {
   const allColors = flattenColorPalette(theme("colors"));
   const newVars = Object.fromEntries(
