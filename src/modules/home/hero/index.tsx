@@ -17,7 +17,7 @@ const HeroSection = ({}: IProps) => {
         <InitialAnimation>
           <Container>
             <div
-              className={`flex justify-center items-center ${michroma.className}`}
+              className={`flex md:justify-center items-center ${michroma.className}`}
             >
               <div>
                 <div className={`${michroma.className}`}>
