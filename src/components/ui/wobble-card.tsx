@@ -25,8 +25,6 @@ export const WobbleCard = ({
     setMousePosition({ x, y });
   };
 
-  console.log(style);
-
   return (
     <motion.section
       onMouseMove={handleMouseMove}

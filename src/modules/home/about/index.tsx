@@ -9,7 +9,7 @@ interface IProps {}
 
 const AboutSection = ({}: IProps) => {
   return (
-    <section className="relative pb-10 pt-10 md:pt-0 md:h-screen">
+    <section className="relative md:pt-10 md:pb-56 2xl:pb-28">
       <div className="hidden md:block">
         <Spotlight
           className="-top-40 left-0 md:left-60 md:top-40"
@@ -19,7 +19,7 @@ const AboutSection = ({}: IProps) => {
       <div className="hidden md:block">
         <TextHoverEffect text="ABOUT" />
       </div>
-      <div className="md:absolute md:top-0 md:translate-y-[90%] w-full">
+      <div className="md:absolute md:top-0 lg:translate-y-[90%] w-full">
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-6 gap-x-14 gap-y-8">
             <WobbleCard
