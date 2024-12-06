@@ -24,7 +24,7 @@ const ProjectDetails = async ({ params }: IProps) => {
   const { data } = await res.json();
 
   return (
-    <section className="pb-20 md:pb-10 pt-10">
+    <section className="pb-20 pt-10">
       <Container>
         <div className="grid md:grid-cols-5 md:gap-x-10 items-center pb-6">
           <div

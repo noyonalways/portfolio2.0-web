@@ -14,7 +14,7 @@ export interface ISkill {
 
 export default async function TechStack() {
   const res = await fetch(
-    `${envConfig.baseApi}/skills?fields=name,description,icon` as string
+    `${envConfig.baseApi}/skills?limit=20&fields=name,description,icon` as string
   );
   const { data } = await res.json();
 

@@ -26,7 +26,7 @@ const ResumeDropdown = ({}: IProps) => {
         <DropdownMenuItem>
           <a
             className="w-full block"
-            href={`https://drive.google.com/file/d/1S4oDpUJGjgftaStzTedI_H85tgGEtMMp/view?usp=sharing`}
+            href={`https://drive.google.com/file/d/1Rnxv1I4cyd8prLjPCuVQeD5cO_D4CyC1/view`}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -36,7 +36,7 @@ const ResumeDropdown = ({}: IProps) => {
         <DropdownMenuItem>
           <a
             className="w-full block"
-            href={`https://drive.usercontent.google.com/u/0/uc?id=1S4oDpUJGjgftaStzTedI_H85tgGEtMMp&export=download`}
+            href={`https://drive.usercontent.google.com/uc?id=1Rnxv1I4cyd8prLjPCuVQeD5cO_D4CyC1&export=download`}
             target="_blank"
             rel="noopener noreferrer"
           >
