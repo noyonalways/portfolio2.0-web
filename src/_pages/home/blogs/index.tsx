@@ -23,7 +23,7 @@ interface IBento {
 }
 
 export default async function BlogSection() {
-  const res = await fetch(`${envConfig.baseApi}/blogs` as string, {
+  const res = await fetch(`${envConfig.baseApi}/blogs?limit=4` as string, {
     next: {
       revalidate: 120,
     },

@@ -1,7 +1,7 @@
+import { ProjectCard } from "@/_pages/home/projects/project-card";
+import TopSection from "@/_pages/projects/top-section";
 import Container from "@/components/ui/container";
 import envConfig from "@/config/env.config";
-import { ProjectCard } from "@/modules/home/projects/project-card";
-import TopSection from "@/modules/projects/top-section";
 import { IProject } from "@/types";
 
 interface IProps {}

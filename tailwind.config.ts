@@ -34,6 +34,11 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        michroma: ["var(--font-michroma)"],
+        poppins: ["var(--font-poppins)"],
+        khula: ["var(--font-khula)"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
