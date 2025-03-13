@@ -61,7 +61,7 @@ const ContactSection = ({}: IProps) => {
             <p
               className={`leading-relaxed text-sm md:text-base ${poppins.className}`}
             >
-              © 2024 Noyon Rahman. Made with ❤️ to showcase creativity and
+              © {new Date().getFullYear()} Noyon Rahman. Made with ❤️ to showcase creativity and
               passion for web development.
             </p>
           </div>
