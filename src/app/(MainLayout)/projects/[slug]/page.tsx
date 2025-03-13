@@ -1,10 +1,10 @@
+import ImageGallery from "@/_pages/projects/image-gallery";
 import AnimatedShinyText from "@/components/ui/animated-shiny-text";
 import Container from "@/components/ui/container";
 import ShinyButton from "@/components/ui/shiny-button";
 import { WobbleCard } from "@/components/ui/wobble-card";
 import envConfig from "@/config/env.config";
 import { cn } from "@/lib/utils";
-import ImageGallery from "@/modules/projects/image-gallery";
 import { khula, michroma, poppins } from "@/utils/fonts";
 import { ChevronRight, Github } from "lucide-react";
 

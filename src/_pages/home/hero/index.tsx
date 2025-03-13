@@ -38,7 +38,7 @@ const HeroSection = ({}: IProps) => {
                 <div
                   className={`inline-block [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))] text-6xl lg:text-8xl font-bold ${michroma.className} mb-4`}
                 >
-                  <div className=" text-left block pointer-events-none whitespace-pre-wrap bg-clip-text leading-none text-transparent bg-gradient-to-r py-4 from-purple-500 via-violet-500 to-pink-500  dark:from-purple-400 dark:via-violet-500 dark:to-pink-400">
+                  <div className="text-left block pointer-events-none whitespace-pre-wrap bg-clip-text leading-none text-transparent bg-gradient-to-r py-4 from-purple-500 via-violet-500 to-pink-500  dark:from-purple-400 dark:via-violet-500 dark:to-pink-400">
                     <span className="font-bold leading-tight md:leading-none">
                       Noyon Rahman
                     </span>

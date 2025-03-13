@@ -1,6 +1,6 @@
+import TopSection from "@/_pages/blogs/top-section";
 import Container from "@/components/ui/container";
 import envConfig from "@/config/env.config";
-import TopSection from "@/modules/blogs/top-section";
 import { IBlog } from "@/types";
 import Image from "next/image";
 import Link from "next/link";

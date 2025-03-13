@@ -5,6 +5,7 @@
 html {
   @apply scroll-smooth;
 }
+
 ::-webkit-scrollbar {
   @apply w-1 lg:w-[4px];
 }
@@ -78,7 +79,27 @@ html {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+}
+
+
+/* lenis styles */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: clip;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
 }
