@@ -7,7 +7,8 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import ShinyButton from "@/components/ui/shiny-button";
-import { FileUser } from "lucide-react";
+import { about } from "@/constants/about";
+import { Eye, FileDown, FileUser } from "lucide-react";
 
 interface IProps {}
 
@@ -15,32 +16,34 @@ const ResumeDropdown = ({}: IProps) => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <ShinyButton className="px-8 py-3">
+        <ShinyButton className="pl-4 pr-12">
           <div className="flex items-center space-x-2">
-            <FileUser />
+            <FileUser className="size-5" />
             <span>Resume</span>
           </div>
         </ShinyButton>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="start">
+      <DropdownMenuContent align="start" className="w-36">
         <DropdownMenuItem>
           <a
-            className="w-full block"
-            href={`https://drive.google.com/file/d/1Rnxv1I4cyd8prLjPCuVQeD5cO_D4CyC1/view`}
+            className="w-full flex items-center space-x-2"
+            href={about.resume.view}
             target="_blank"
             rel="noopener noreferrer"
           >
-            View
+            <Eye className="w-4 h-4" />
+            <span>View</span>
           </a>
         </DropdownMenuItem>
         <DropdownMenuItem>
           <a
-            className="w-full block"
-            href={`https://drive.usercontent.google.com/uc?id=1Rnxv1I4cyd8prLjPCuVQeD5cO_D4CyC1&export=download`}
+            className="w-full flex items-center space-x-2"
+            href={about.resume.download}
             target="_blank"
             rel="noopener noreferrer"
           >
-            Download
+            <FileDown className="w-4 h-4" />
+            <span>Download</span>
           </a>
         </DropdownMenuItem>
       </DropdownMenuContent>
