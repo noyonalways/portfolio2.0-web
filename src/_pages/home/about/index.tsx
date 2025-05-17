@@ -1,6 +1,7 @@
 import Container from "@/components/ui/container";
 import { Spotlight } from "@/components/ui/spotlight";
 import { TextHoverEffect } from "@/components/ui/text-hover-effect";
+import { about } from "@/constants/about";
 import { khula, poppins } from "@/utils/fonts";
 import Image from "next/image";
 import ResumeDropdown from "./resume-dropdown";
@@ -30,8 +31,8 @@ const AboutSection = ({}: IProps) => {
 
             <div className="col-span-2 ">
               <Image
-                src="https://i.ibb.co.com/d5CqwWh/5fb8a140671d575b.png"
-                alt="About Me"
+                src={about.image.url}
+                alt={about.image.alt}
                 width={500}
                 height={500}
                 className="w-full h-full object-cover rounded-lg"
@@ -48,21 +49,12 @@ const AboutSection = ({}: IProps) => {
                 <p
                   className={`${poppins.className} text-muted-foreground leading-relaxed`}
                 >
-                  I&lsquo;m Noyon Rahman, specializing in building responsive
-                  and dynamic web applications with expertise in React.js,
-                  TypeScript, Redux-Toolkit, Next.js, Mongoose, Express.js,
-                  Tailwind CSS, and Docker. Passionate about delivering
-                  high-performance solutions, I am always eager to learn and
-                  explore new tools and languages to stay at the forefront of
-                  modern web development.
+                  {about.description.para1}
                 </p>
                 <p
                   className={`${poppins.className} text-muted-foreground leading-relaxed`}
                 >
-                  When I&lsquo;m not coding, you can usually find me reading,
-                  hiking, or enjoying a good cup of coffee. I&lsquo;m also a big
-                  fan of traveling and exploring new places whenever I get the
-                  chance.
+                  {about.description.para2}
                 </p>
               </div>
 

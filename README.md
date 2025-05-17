@@ -11,7 +11,7 @@
     <img src="https://i.ibb.co/c64q254/noyon-logo-dark.png" alt="Logo" width="80" height="80" />
     <h3 align="center">
         <a href="https://github.com/noyonalways/portfolio2.0-web" target="_blank" >
-            Portfolio2.0
+            Portfolio 2.0
         </a>
     </h3>
 </p>
