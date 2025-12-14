@@ -19,7 +19,7 @@ export const about: AboutType = {
   name: "Noyon Rahman",
   designation: "Software Engineer",
   image: {
-    url: "https://i.ibb.co/whqsJfYs/noyon-rahman-2025-profile-compressed.png",
+    url: "https://avatars.githubusercontent.com/u/89659561?v=4",
     alt: "Noyon Rahman Profile Image",
   },
   description: {
